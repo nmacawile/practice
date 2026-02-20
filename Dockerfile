@@ -3,8 +3,8 @@ RUN apk add git
 RUN git config --global core.autocrlf true
 
 WORKDIR /app
+RUN npm create vite@latest . -- --template 
 COPY . .
-RUN npm create vite@latest . -- --template react
 RUN npm install
 
 EXPOSE 5173
