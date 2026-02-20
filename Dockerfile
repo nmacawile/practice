@@ -11,4 +11,4 @@ EXPOSE 5173
 CMD ["npm", "run", "dev", "--", "--host"]
 
 # docker build --tag <IMAGE_NAME> .
-# docker create --name <CONTAINER_NAME> -p 5173:5173 -it --volume <CONTAINER_NAME>:/app [--volume C:\Users\<USER_NAME>\.ssh:\root\.ssh] <IMAGE_NAME>
+# docker create --name <CONTAINER_NAME> -p 5173:5173 -it --volume <CONTAINER_NAME>:/app [--volume C:\Users\<USER_NAME>\.ssh:/root/.ssh] <IMAGE_NAME>
